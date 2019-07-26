@@ -1,0 +1,16 @@
+
+<button (click)='findO("visible")' class="btn btn-primary">Search</button>
+<br>
+<br>
+<table class="table table-striped" [ngStyle]="{'visibility':showHead}">
+    <tr>
+        <th> Id</th>
+        <th> Donar Name</th>
+        <th> Blood Group</th>
+    </tr>
+    <tr *ngFor="let eachTour of matchDonarList">
+        <td>{{eachTour.id}}</td>
+        <td>{{eachTour.donarName}}</td>
+        <td>{{eachTour.bloodGroup}}</td>
+    </tr>
+</table>

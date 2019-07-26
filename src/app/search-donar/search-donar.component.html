@@ -1,0 +1,19 @@
+
+<!-- <table class="table table-bordered">
+    <tr>
+        <th> id</th>
+        <th> Donar Name</th>
+        <th> Blood Group</th>
+    </tr>
+    <tr *ngFor="let eachTour of donarList">
+        <td>{{eachTour.id}}</td>
+        <td>{{eachTour.donarName}}</td>
+        <td>{{eachTour.bloodGroup}}</td>
+    </tr>
+</table> -->
+<label for="bloodGroup">Enter the Blood Group:</label>
+<input type="text" [(ngModel)]='bloodGroup' class="form-control" name='bloodGroup'>
+<br>
+<app-fetchoperator [srchDonar]="bloodGroup" (operator)="onChange($event)"></app-fetchoperator>
+
+
