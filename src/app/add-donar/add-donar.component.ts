@@ -10,7 +10,7 @@ import { SearchService } from '../search-service.service';
 export class AddDonarComponent implements OnInit {
   nextId=50;
   nextValue:number;
-  donor: DonarInterface = {id:this.nextValue , donarName: "", bloodGroup: ""};
+  donor: DonarInterface = {id:this.nextValue , donarName: "", bloodGroup: "",location:"",mobileNo:0};
   message:string;
   constructor(private service: SearchService) { }
 

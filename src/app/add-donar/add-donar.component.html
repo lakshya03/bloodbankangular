@@ -1,9 +1,13 @@
 
 <form #frm="ngForm" (ngSubmit)="onSubmit()">
     <label for="donorName">Donor Name:</label>
-    <input type="text" name='donorName' [(ngModel)]="donor.donarName" class="form-control"><br><br>
+    <input type="text" name='donorName' [(ngModel)]="donor.donarName" class="form-control"><br>
     <label for="BloodGroup">Blood Group:</label>
-    <input type="bloodGroup" name='BloodGroup' [(ngModel)]="donor.bloodGroup" class="form-control"><br><br>
+    <input type="text" name='BloodGroup' [(ngModel)]="donor.bloodGroup" class="form-control"><br>
+    <label for="location">Location:</label>
+    <input type="text" name='BloodGroup' [(ngModel)]="donor.location" class="form-control"><br>
+    <label for="MobileNo">Mobile No:</label>
+    <input type="text" name='MobileNo' [(ngModel)]="donor.mobileNo" class="form-control"><br>
 
     <input type="submit" value="Add" class="btn btn-primary"><br><br>
 </form>

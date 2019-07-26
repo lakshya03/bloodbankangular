@@ -7,10 +7,15 @@
         <th> Id</th>
         <th> Donar Name</th>
         <th> Blood Group</th>
+        <th> Location</th>
+        <th> Mobile NO.</th>
     </tr>
     <tr *ngFor="let eachTour of matchDonarList">
         <td>{{eachTour.id}}</td>
         <td>{{eachTour.donarName}}</td>
         <td>{{eachTour.bloodGroup}}</td>
+        <td>{{eachTour.location}}</td>
+        <td>{{eachTour.mobileNo}}</td>
+
     </tr>
 </table>
